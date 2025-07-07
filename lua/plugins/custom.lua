@@ -16,10 +16,12 @@ return {
             require "configs.dap"
         end,
     },
+
     {
         "rcarriga/nvim-dap-ui",
         dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
     },
+
     {
         "kdheepak/lazygit.nvim",
         dependencies = {

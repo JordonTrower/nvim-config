@@ -12,6 +12,12 @@ dap.adapters["pwa-node"] = {
     },
 }
 
+dap.adapters.godot = {
+    type = "server",
+    host = "127.0.0.1",
+    port = "6006",
+}
+
 -- Attach to remote java debuggers
 
 dap.configurations.java = {
@@ -52,6 +58,14 @@ dap.configurations.javascript = jsConfig
 dap.configurations.typescript = jsConfig
 dap.configurations.javascriptreact = jsConfig
 dap.configurations.typescriptreact = jsConfig
+
+dap.configurations.gdscript = {
+    type = "godot",
+    request = "launch",
+    name = "Launch scene",
+    project = "${workspaceFolder}",
+    launch_scene = true,
+}
 
 -- Set up dapui for a better debugging experience
 -- show dapui when attached or debugging
