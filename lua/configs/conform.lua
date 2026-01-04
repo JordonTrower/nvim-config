@@ -3,6 +3,7 @@ local options = {
         lua = { "stylua" },
         css = { "prettierd" },
         html = { "prettierd" },
+        nix = { "nixfmt" },
         typescript = { "prettierd" },
         typescriptreact = { "prettierd" },
         javascript = { "prettierd" },

@@ -36,3 +36,16 @@ lspconfig("gdscript", {
     on_init = on_init,
     capabilities = capabilities,
 })
+
+lspconfig("nixd", {
+    settings = {
+        nixd = {
+            formatting = {
+                command = { "nixfmt" },
+            },
+        },
+    },
+    on_attach = on_attach,
+    on_init = on_init,
+    capabilities = capabilities,
+})
